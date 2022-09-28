@@ -4,5 +4,7 @@ def square_matrix_simple(matrix=[]):
     for iterable in matrix:
         new_matr.append(list(map(square,iterable)))
     return new_matr
+
+
 def square(n):
     return n*n
