@@ -1,10 +1,3 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    new_matr = []
-    for iterable in matrix:
-        new_matr.append(list(map(square,iterable)))
-    return new_matr
-
-
-def square(n):
-    return n*n
+    return([list(map(lambda x: x ** 2, i))for i in matrix])
